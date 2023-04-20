@@ -1,10 +1,10 @@
-const button = document.querySelector('#myButton');
+const button = document.getElementById('myButton');
 const token = '';
 
 button.addEventListener('click', getFirmyData);
 
 function getFirmyData() {
-  const nip = document.querySelector('#nipInput').value;
+  const nip = document.getElementById('nipInput').value;
   const url = `https://test-dane.biznes.gov.pl/api/ceidg/v2/firmy?query&nip=${nip}`;
 
   fetch(url, {
